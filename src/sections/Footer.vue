@@ -1,5 +1,5 @@
 <template>
-	<footer class="bg-white border-top">
+	<footer class="bg-dark border-top">
 		<b-container class="d-none  d-lg-block">
 			<b-row>
 				<b-col>
@@ -45,7 +45,7 @@
 				</b-col>
 				<b-col>
 <!--					<h5>Contact</h5>-->
-					<img src="../assets/logo.png" class="mb-3" alt="logo" />
+					<Logo class="mb-3" />
 					<p>Get in touch of releases and new seedstorm.io features by subscribing.</p>
 					<p>J'aimerais bien que ce projet work.</p>
 					<a href="" class="font-weight-bold accent">
@@ -71,8 +71,10 @@
 </template>
 
 <script>
+import Logo from "@/components/Logo";
 export default {
-	name: "Footer"
+	name: "Footer",
+	components: {Logo}
 }
 </script>
 
@@ -88,6 +90,12 @@ footer
 {
 	margin-top: 70px;
 	font-size: 16px;
+}
+
+footer.bg-dark
+{
+	background-color: #2d2e33 !important;
+	color: white !important;
 }
 
 footer > .container
@@ -110,6 +118,12 @@ footer p
 	font-size: 14px;
 }
 
+footer.bg-dark a,
+footer.bg-dark p
+{
+	color: white !important;
+}
+
 footer a:hover
 {
 	text-decoration: none;
@@ -119,6 +133,11 @@ footer .copyright
 {
 	padding: 20px 0;
 	font-size: 11pt;
+}
+
+footer.bg-dark .copyright
+{
+	background-color: #27282d !important;
 }
 
 footer .copyright p

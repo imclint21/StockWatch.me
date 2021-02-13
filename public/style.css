@@ -18,6 +18,16 @@ body
     color: #517FE5 !important;
 }
 
+.btn-link
+{
+    color: #2d2e33 !important;
+}
+
+.bg-dark .btn-link
+{
+    color: white !important;
+}
+
 .page-item .page-link
 {
     color: #517FE5 !important;;
@@ -142,4 +152,20 @@ body
 .td-w-250
 {
     width: 250px;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+    color: white !important;
+}
+
+.card.bg-dark .table-dark
+{
+    background-color: #2d2e33 !important;
+}
+
+.table-dark th, .table-dark td, .table-dark thead th
+{
+    color: #eeeeee !important;
+    border-color: #383941 !important;
 }

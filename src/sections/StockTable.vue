@@ -8,7 +8,7 @@
 		</b-row>
 		<b-row>
 			<b-col>
-				<b-card bg-variant="white">
+				<b-card bg-variant="dark">
 					<b-table
 						id="stocks"
 						responsive="md"
@@ -17,6 +17,7 @@
 						:items="items"
 						:fields="fields"
 						sort-icon-left
+						dark
 						striped>
 						<template #head(id)="data">
 							<div class="text-center">{{ data.label }}</div>
@@ -72,11 +73,11 @@
 				</b-card>
 			</b-col>
 		</b-row>
-		<b-row>
+		<b-row class="d-none">
 			<b-col>
 				<div class="d-flex justify-content-center mt-4">
 					<b-pagination
-						class="mx-auto shadow-sm border-0"
+						class="mx-auto shadow-sm border-0 customPagination"
 						v-model="currentPage"
 						:total-rows="items.length"
 						:per-page="perPage"
@@ -176,11 +177,13 @@ export default {
 	box-shadow: 0 0 100px rgba(238, 238, 238, .7);
 	border: 0;
 	padding-top: 5px;
+	border-radius: 0px;
 }
 
-.card
+.card.bg-dark
 {
-	border-radius: 0px;
+	box-shadow: 0 0 100px rgba(45, 46, 51, .7);
+	background-color: #2d2e33 !important;
 }
 
 .card-body
@@ -216,5 +219,16 @@ a
 	border-right: 0.3em solid transparent;
 	border-bottom: 0;
 	border-left: 0.3em solid transparent;
+}
+
+.customPagination > li > a {
+	color: red;
+}
+
+.customPagination > li.active > a,
+.customPagination > li > a:hover
+{
+	color: white;
+	background-color: green!important;
 }
 </style>

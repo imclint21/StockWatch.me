@@ -1,5 +1,5 @@
 <template>
-	<b-navbar toggleable="lg" type="light" variant="white" class="border-bottom" sticky>
+	<b-navbar toggleable="lg" type="dark" variant="dark" class="border-bottom" sticky>
 		<b-container class="py-0 py-lg-4 px-0">
 			<b-navbar-brand>
 				<router-link to="/" class="inherit">
@@ -71,6 +71,16 @@ export default {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.navbar-dark .navbar-nav .nav-link
+{
+	color: white !important;
+}
+
+.bg-dark
+{
+	background-color: #2d2e33 !important;
+}
+
 .nav-item
 {
 	font-size: 14px;
@@ -79,9 +89,14 @@ export default {
 	font-weight: 500;
 }
 
-.border-bottom
+.navbar-light.border-bottom
 {
 	border-color: rgba(78, 124, 228, 0.12) !important;
+}
+
+.navbar-dark.border-bottom
+{
+	border-bottom-width: 0 !important;
 }
 
 .navbar-expand .navbar-nav .nav-link

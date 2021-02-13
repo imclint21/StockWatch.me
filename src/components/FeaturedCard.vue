@@ -1,5 +1,5 @@
 <template>
-	<b-card bg-variant="white">
+	<b-card bg-variant="dark">
 		<b-media vertical-align="center">
 			<template #aside>
 				<b-img width="64" height="64" :src="image" alt="Media Aside" />
@@ -27,6 +27,11 @@ export default {
 	box-shadow: 0 3px 20px rgba(0, 0, 0, .03);
 	border-radius: 7px;
 	border: 0 none;
+}
+
+.card.bg-dark
+{
+	background-color: #2d2e33 !important;
 }
 
 .title

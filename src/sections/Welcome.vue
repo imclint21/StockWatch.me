@@ -41,7 +41,8 @@ h1
 
 p.lead
 {
-	color: #777777;
+	/*color: #777777;*/
+	color: #aaaaaa;
 	font-weight: 300;
 }
 

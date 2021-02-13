@@ -1,5 +1,5 @@
 <template>
-	<b-navbar toggleable="lg" class="border-bottom" type="light" variant="white">
+	<b-navbar toggleable="lg" class="border-bottom" type="dark" variant="dark">
 		<b-container class="p-0">
 			<b-navbar-nav>
 				<b-nav-item class="text-center text-lg-left">StockWatch.me provides the latest stock market, financial and business news.</b-nav-item>
@@ -31,9 +31,23 @@ export default {
 	min-height: 50px;
 }
 
+.bg-dark
+{
+	background-color: #27282d !important;
+}
+
 .navbar-dark
 {
-	background-image: linear-gradient(-45deg, #517FE5 0%, #3B6EDD 100%);
+	/*background-image: linear-gradient(-45deg, #517FE5 0%, #3B6EDD 100%);*/
+}
+
+.navbar-dark.border-bottom
+{
+	border-bottom-width: 0 !important;
+}
+
+.navbar-light.border-bottom {
+	border-bottom: 1px solid #f6f6f6 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link
@@ -51,8 +65,5 @@ export default {
 /*	color: white !important;*/
 /*}*/
 
-.border-bottom {
-	border-bottom: 1px solid #f6f6f6 !important;
-}
 
 </style>

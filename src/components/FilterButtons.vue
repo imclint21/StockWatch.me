@@ -41,6 +41,11 @@ export default {
 </script>
 
 <style scoped>
+.nav
+{
+	display: none !important;
+}
+
 .nav-link
 {
 	color: rgb(88, 102, 126);

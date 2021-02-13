@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" class="bg-dark">
 		<Banner />
 		<Header />
 		<router-view></router-view>
@@ -32,6 +32,12 @@ export default {
 	/*background-position-x: center;*/
 	/*background-position-y: 155px;*/
 	/*background-repeat: no-repeat;*/
+}
+
+#app.bg-dark
+{
+	background-color: #27282d !important;
+	color: white !important;
 }
 
 @media (min-width: 1200px)
