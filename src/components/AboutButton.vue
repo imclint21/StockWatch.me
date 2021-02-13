@@ -1,12 +1,12 @@
 <template>
-	<b-button pill variant="outline-primary">
+	<b-button to="about" pill variant="outline-primary">
 		<slot />
 	</b-button>
 </template>
 
 <script>
 export default {
-	name: "SecondaryButton",
+	name: "AboutButton",
 }
 </script>
 
@@ -22,6 +22,6 @@ export default {
 
 .btn-outline-primary:hover
 {
-	background-color: #517FE5;
+	background-image: linear-gradient(45deg, #517FE5 0%, #3B6EDD 100%) !important;
 }
 </style>

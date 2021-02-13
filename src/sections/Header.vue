@@ -29,10 +29,12 @@
 				</b-navbar-nav>
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form class="mx-auto mx-lg-0 my-3 my-lg-0">
-						<SecondaryButton>
-							<vue-feather type="help-circle" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
-							Get Help
-						</SecondaryButton>
+						<AboutButton>
+							<vue-feather type="info" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
+							About Us
+<!--							<vue-feather type="help-circle" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>-->
+<!--							Get Help-->
+						</AboutButton>
 						<PrimaryButton class="ml-3">
 							<vue-feather type="rss" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
 							Subscribe
@@ -47,14 +49,14 @@
 <script>
 import Logo from "@/components/Logo";
 import DropdownMenu from "@/components/DropdownMenu";
-import SecondaryButton from "@/components/SecondaryButton";
 import PrimaryButton from "@/components/PrimaryButton";
 import VueFeather from "vue-feather";
+import AboutButton from "@/components/AboutButton";
 export default {
 	name: "Header",
 	components: {
+		AboutButton,
 		PrimaryButton,
-		SecondaryButton,
 		DropdownMenu,
 		Logo,
 		VueFeather
