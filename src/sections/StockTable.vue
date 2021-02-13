@@ -91,6 +91,7 @@
 <script>
 // import  from "numeral";
 import FilterButtons from "@/components/FilterButtons";
+
 export default {
 	name: "StockTable",
 	components: {
@@ -193,7 +194,6 @@ export default {
 
 a
 {
-	color: #517FE5;
 	font-weight: 500;
 }
 

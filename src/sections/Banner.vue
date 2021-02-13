@@ -38,7 +38,8 @@ export default {
 
 .navbar-dark
 {
-	/*background-image: linear-gradient(-45deg, #517FE5 0%, #3B6EDD 100%);*/
+	/*background-color: var(--accent) !important;*/
+	background-image: linear-gradient(-45deg, #517FE5 0%, #3B6EDD 100%);
 }
 
 .navbar-dark.border-bottom
