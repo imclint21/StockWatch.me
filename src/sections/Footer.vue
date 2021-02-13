@@ -1,6 +1,6 @@
 <template>
-	<footer class="bg-dark border-top">
-		<b-container class="d-none  d-lg-block">
+	<footer :class="this.darkMode ? 'bg-dark' : 'border-top'">
+		<b-container class="d-none d-lg-block">
 			<b-row>
 				<b-col>
 					<h5>Services</h5>
@@ -45,7 +45,7 @@
 				</b-col>
 				<b-col>
 <!--					<h5>Contact</h5>-->
-					<Logo class="mb-3" />
+					<Logo :dark="this.darkMode" class="mb-3" />
 					<p>Get in touch of releases and new seedstorm.io features by subscribing.</p>
 					<p>J'aimerais bien que ce projet work.</p>
 					<a href="" class="font-weight-bold accent">
@@ -88,7 +88,7 @@ export default {
 
 footer
 {
-	margin-top: 70px;
+	margin-top: 100px;
 	font-size: 16px;
 }
 

@@ -1,5 +1,5 @@
 <template>
-	<div id="app" class="bg-dark">
+	<div id="app" :class="this.darkMode ? 'bg-dark' : ''">
 		<Banner />
 		<Header />
 		<router-view></router-view>

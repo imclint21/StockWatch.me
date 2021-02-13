@@ -1,5 +1,5 @@
 <template>
-	<b-navbar toggleable="lg" class="border-bottom" type="dark" variant="dark">
+	<b-navbar toggleable="lg" class="border-bottom" :type="this.darkMode ? 'dark' : 'light'" :variant="this.darkMode ? 'dark' : 'white'">
 		<b-container class="p-0">
 			<b-navbar-nav>
 				<b-nav-item class="text-center text-lg-left">StockWatch.me provides the latest stock market, financial and business news.</b-nav-item>

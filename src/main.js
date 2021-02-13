@@ -26,13 +26,57 @@ Vue.component(VueFeather.name, VueFeather);
 Vue.config.productionTip = false
 
 const router = new VueRouter({
-  routes: [
-    { path: '/', component: Index },
-    { path: '/about', component: About },
-  ]
+    routes: [
+        { path: '/', component: Index },
+        { path: '/about', component: About },
+    ]
 })
 
+Vue.mixin((() => {
+    let theme = "light";
+    if (localStorage.getItem("theme") !== null)
+    {
+        theme = localStorage.getItem("theme")
+    }
+
+    let store = Vue.observable({
+        darkMode: theme === "dark"
+    })
+
+    return {
+        computed: {
+            darkMode: {
+                get(){
+                    return store.darkMode
+                },
+                set(val){
+                    console.log("lol");
+                    store.darkMode = val
+                }
+            }
+        },
+    }
+})())
+
 new Vue({
-  render: h => h(App),
-  router
+    render: h => h(App),
+    data() {
+        return {
+            appTheme: 'tg'
+        }
+    },
+    // data: function () {
+    //   return {
+    //     globalTheme: String
+    //   }
+    // },
+    // created: function() {
+    //   this.tg = document.documentElement.getAttribute('data-theme')
+    // },
+    router,
+    // methods: {
+    //   methodThatForcesUpdate() {
+    //     this.$forceUpdate();  // Notice we have to use a $ here
+    //   }
+    // }
 }).$mount('#app')

@@ -1,9 +1,9 @@
 <template>
-	<b-navbar toggleable="lg" type="dark" variant="dark" class="border-bottom" sticky>
+	<b-navbar toggleable="lg" :type="this.darkMode ? 'dark' : 'light'" :variant="this.darkMode ? 'dark' : 'white'" class="border-bottom" sticky>
 		<b-container class="py-0 py-lg-4 px-0">
 			<b-navbar-brand>
 				<router-link to="/" class="inherit">
-					<Logo />
+					<Logo :dark="this.darkMode" />
 				</router-link>
 			</b-navbar-brand>
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import Logo from "@/components/Logo";
-import DropdownMenu from "@/components/DropdownMenu";
-import PrimaryButton from "@/components/PrimaryButton";
-import VueFeather from "vue-feather";
-import AboutButton from "@/components/AboutButton";
-import DarkModeSwitch from "@/components/DarkModeSwitch";
+import Logo from '@/components/Logo';
+import DropdownMenu from '@/components/DropdownMenu';
+import PrimaryButton from '@/components/PrimaryButton';
+import VueFeather from 'vue-feather';
+import AboutButton from '@/components/AboutButton';
+import DarkModeSwitch from '@/components/DarkModeSwitch';
 export default {
 	name: "Header",
 	components: {
@@ -60,8 +60,16 @@ export default {
 		PrimaryButton,
 		DropdownMenu,
 		Logo,
-		VueFeather
-	}
+		VueFeather,
+	},
+	// mounted() {
+	// 	// console.log(appTheme);
+	// },
+	// methods: {
+	// 	actualTheme () {
+	// 		return document.documentElement.getAttribute('data-theme');
+	// 	}
+	// }
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-	<b-card bg-variant="dark">
+	<b-card :bg-variant="this.darkMode ? 'dark' : 'light'">
 		<b-media vertical-align="center">
 			<template #aside>
 				<b-img width="64" height="64" :src="image" alt="Media Aside" />

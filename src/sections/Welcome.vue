@@ -8,7 +8,7 @@
 <!--				:typeDelay="70"-->
 <!--			></vue-typer>-->
 		</h1>
-		<p class="lead">
+		<p :class="this.darkMode ? 'lead' : 'lead text-muted'">
 			We provide real time US stock market informations.
 <!--			<vue-typer text="We provide real time US stock market informations."></vue-typer>-->
 		</p>

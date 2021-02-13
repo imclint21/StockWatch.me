@@ -6,7 +6,7 @@
 			</pattern>
 		</defs>
 		<text id="StockWatch.me" transform="translate(45 27)" fill="#517fe5" font-size="26" font-family="Nunito-Bold, Nunito" font-weight="700" letter-spacing="-0.001em">
-			<tspan x="0" y="0" fill="#fff">StockWatch</tspan>
+			<tspan x="0" y="0" :fill="this.dark ? '#fff' : '#000'">StockWatch</tspan>
 			<tspan y="0" fill="#517fe5">.me</tspan></text>
 		<rect id="icons8-haussier-96" width="36" height="36" fill="url(#pattern)"/>
 	</svg>
@@ -15,6 +15,9 @@
 <script>
 export default {
 	name: "Logo",
+	props: {
+		dark: Boolean
+	},
 	data: function () {
 		return {
 			height: 36

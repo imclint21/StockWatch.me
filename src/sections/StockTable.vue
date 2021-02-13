@@ -8,7 +8,7 @@
 		</b-row>
 		<b-row>
 			<b-col>
-				<b-card bg-variant="dark">
+				<b-card :bg-variant="this.darkMode ? 'dark' : ''">
 					<b-table
 						id="stocks"
 						responsive="md"
@@ -17,7 +17,7 @@
 						:items="items"
 						:fields="fields"
 						sort-icon-left
-						dark
+						:dark="this.darkMode"
 						striped>
 						<template #head(id)="data">
 							<div class="text-center">{{ data.label }}</div>
