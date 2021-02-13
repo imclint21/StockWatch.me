@@ -10,7 +10,10 @@
 			<b-col>
 				<b-card bg-variant="white">
 					<b-table
-						responsive="sm"
+						id="stocks"
+						responsive="md"
+						:per-page="perPage"
+						:current-page="currentPage"
 						:items="items"
 						:fields="fields"
 						sort-icon-left
@@ -69,6 +72,18 @@
 				</b-card>
 			</b-col>
 		</b-row>
+		<b-row>
+			<b-col>
+				<div class="d-flex justify-content-center mt-4">
+					<b-pagination
+						class="mx-auto shadow-sm border-0"
+						v-model="currentPage"
+						:total-rows="items.length"
+						:per-page="perPage"
+					></b-pagination>
+				</div>
+			</b-col>
+		</b-row>
 	</div>
 </template>
 
@@ -88,6 +103,8 @@ export default {
 	},
 	data() {
 		return {
+			perPage: 100,
+			currentPage: 1,
 			fields: [
 				{
 					key: 'id',

@@ -18,6 +18,18 @@ body
     color: #517FE5 !important;
 }
 
+.page-item .page-link
+{
+    color: #517FE5 !important;;
+}
+
+.page-item.active .page-link
+{
+    background-color: #517FE5 !important;
+    border-color: #517FE5 !important;
+    color: #ffffff !important;
+}
+
 .light .nav-link
 {
     background-color: rgb(236, 238, 241) !important;
@@ -79,6 +91,11 @@ body
 }
 
 .table
+{
+    margin-bottom: 0 !important;
+}
+
+.table-responsive, [class*=table-responsive-]
 {
     margin-bottom: 0 !important;
 }
