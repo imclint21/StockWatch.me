@@ -7,7 +7,7 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="light"] {
-    --bg-primary: #0000ff;
+    --bg-primary: rgba(81, 127, 229, 0.02);
     --bg-secondary: #0000ff;
     --accent: #517FE5;
 }
@@ -24,15 +24,13 @@ html[data-theme="light"] {
     text-decoration: inherit;
 }
 
-.accent,
-a {
+.accent
+{
     color: var(--accent) !important;
 }
 
 path.accent, tspan.accent {
     fill: var(--accent);
-    /*stroke: var(--dark-bg-secondary);*/
-    /*stroke-width: 3;*/
 }
 
 .btn-link {

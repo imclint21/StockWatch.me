@@ -194,6 +194,7 @@ export default {
 
 a
 {
+	color: var(--accent);
 	font-weight: 500;
 }
 

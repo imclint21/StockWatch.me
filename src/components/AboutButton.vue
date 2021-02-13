@@ -15,7 +15,7 @@ export default {
 {
 	box-shadow: 0 3px 20px rgba(0, 0, 0, .07);
 	border-color: var(--accent) !important;
-	color: var(--accent);
+	color: var(--accent) !important;
 	padding-left: 30px !important;
 	padding-right: 30px !important;
 }
