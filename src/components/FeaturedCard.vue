@@ -24,6 +24,7 @@ export default {
 <style scoped>
 .card
 {
+	background-color: white !important;
 	box-shadow: 0 3px 20px rgba(0, 0, 0, .03);
 	border-radius: 7px;
 	border: 0 none;
