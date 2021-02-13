@@ -3,13 +3,21 @@
 html[data-theme="dark"] {
     --bg-primary: #27282d;
     --bg-secondary: #2d2e33;
+    --bg-light: #d7a63a80;
     --accent: #d7a63a;
+
+    --text-light: rgb(240, 246, 255);
+    --text-light-gray: #7d7f82;
 }
 
 html[data-theme="light"] {
     --bg-primary: rgba(81, 127, 229, 0.02);
     --bg-secondary: #0000ff;
+    --bg-light: rgb(240, 246, 255);
     --accent: #517FE5;
+
+    --text-light: #517FE5;
+    --text-light-gray: rgb(88, 102, 126);
 }
 
 /*body*/
@@ -181,4 +189,9 @@ html[data-theme="dark"] body {
 .table-dark th, .table-dark td, .table-dark thead th {
     color: #eeeeee !important;
     border-color: #383941 !important;
+}
+
+.tv-widget-chart__container
+{
+    padding: 0 !important;
 }

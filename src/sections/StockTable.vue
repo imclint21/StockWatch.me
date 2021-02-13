@@ -30,10 +30,10 @@
 								<template #aside>
 									<b-img width="32" style="height: intrinsic; max-height: 32px;" :src="data.item.image" alt="btc" />
 								</template>
-								<a href="/" class="title m-0">
+								<router-link :to="'/stock/' + data.item.ticker" class="title m-0">
 									{{ data.item.name }}
-									<!--							<b-badge variant="success" class="ml-1 text-white">A</b-badge>-->
-								</a>
+<!--									<b-badge variant="success" class="ml-1 text-white">A</b-badge>-->
+								</router-link>
 								<p class="description font-weight-light small mb-0">{{ data.item.company }}</p>
 							</b-media>
 						</template>

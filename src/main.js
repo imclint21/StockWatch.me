@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import VueRouter from 'vue-router'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
 import VueTyperPlugin from 'vue-typer'
 import VueNumerals from 'vue-numeral-filter';
 import VueFeather from 'vue-feather';
@@ -10,6 +10,7 @@ import Trend from 'vuetrend'
 
 import Index from '@/pages/Index'
 import About from '@/pages/About'
+import Stock from "@/pages/Stock";
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -43,6 +44,14 @@ const router = new VueRouter({
                 description: ""
             },
             component: About
+        },
+        {
+            path: '/stock/:ticker',
+            meta: {
+                title: "Stock Summary",
+                description: ""
+            },
+            component: Stock
         },
     ]
 })

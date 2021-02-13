@@ -32,6 +32,7 @@
 
 <script>
 import VueFeather from "vue-feather";
+
 export default {
 	name: "FilterButtons",
 	components: {
@@ -43,19 +44,18 @@ export default {
 <style scoped>
 .nav
 {
-	display: none !important;
 }
 
 .nav-link
 {
-	color: rgb(88, 102, 126);
+	color: var(--text-light-gray);
 	font-weight: 500;
 }
 
 .nav-link.active
 {
-	background-color: rgb(240, 246, 255) !important;
-	color: #517FE5 !important;
+	background-color: var(--bg-light) !important;
+	color: var(--text-light) !important;
 }
 
 .right-divider .nav-link
