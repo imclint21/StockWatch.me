@@ -1,7 +1,5 @@
 <template>
-
-	<svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" xmlns:xlink="http://www.w3.org/1999/xlink"
-		 :height="height" viewBox="0 0 235 36">
+	<svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" :height="height" viewBox="0 0 235 36">
 		<defs>
 			<pattern id="pattern" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 96 96" width="100%">
 				<path id="path1140" class="accent"
@@ -9,8 +7,8 @@
 					  transform="scale(.8, .8) translate(14, 10)"/>
 			</pattern>
 		</defs>
-		<text id="StockWatch.me" fill="#517fe5" font-family="Nunito-Bold, Nunito" font-size="26"
-			  font-weight="700" letter-spacing="-0.001em" transform="translate(45 27)">
+		<text id="StockWatch.me" fill="#517fe5" font-family="Nunito-Bold, Nunito" font-size="26" font-weight="700"
+			  letter-spacing="-0.001em" transform="translate(45 27)">
 			<tspan x="0" y="0" :fill="this.dark ? '#fff' : '#000'">StockWatch</tspan>
 			<tspan class="accent" y="0">.me</tspan>
 		</text>
