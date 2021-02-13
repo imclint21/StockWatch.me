@@ -26,18 +26,21 @@ Vue.component(VueFeather.name, VueFeather);
 Vue.config.productionTip = false
 
 const router = new VueRouter({
+    mode: "history",
     routes: [
         {
             path: '/',
             meta: {
-                title: "We provide real time US stock market informations."
+                title: "We provide real time US stock market information.",
+                description: ""
             },
             component: Index
         },
         {
             path: '/about',
             meta: {
-                title: "About StockWatch.me"
+                title: "About StockWatch.me",
+                description: ""
             },
             component: About
         },
