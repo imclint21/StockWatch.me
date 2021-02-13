@@ -1,10 +1,9 @@
- <template>
-
-			<b-container fluid>
-				<Welcome />
-				<Featured />
-				<StockTable />
-			</b-container>
+<template>
+	<b-container fluid>
+		<Welcome />
+		<Featured />
+		<StockTable />
+	</b-container>
 </template>
 
 <script>

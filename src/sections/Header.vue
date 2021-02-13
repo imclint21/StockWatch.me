@@ -1,6 +1,6 @@
 <template>
 	<b-navbar toggleable="lg" type="light" variant="white" class="border-bottom" sticky>
-		<b-container class="py-0 py-lg-4">
+		<b-container class="py-0 py-lg-4 px-0">
 			<b-navbar-brand>
 				<router-link to="/" class="inherit">
 					<Logo />
@@ -39,6 +39,7 @@
 							<vue-feather type="rss" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
 							Subscribe
 						</PrimaryButton>
+						<DarkModeSwitch />
 					</b-nav-form>
 				</b-navbar-nav>
 			</b-collapse>
@@ -52,9 +53,11 @@ import DropdownMenu from "@/components/DropdownMenu";
 import PrimaryButton from "@/components/PrimaryButton";
 import VueFeather from "vue-feather";
 import AboutButton from "@/components/AboutButton";
+import DarkModeSwitch from "@/components/DarkModeSwitch";
 export default {
 	name: "Header",
 	components: {
+		DarkModeSwitch,
 		AboutButton,
 		PrimaryButton,
 		DropdownMenu,
