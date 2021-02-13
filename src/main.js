@@ -27,9 +27,26 @@ Vue.config.productionTip = false
 
 const router = new VueRouter({
     routes: [
-        { path: '/', component: Index },
-        { path: '/about', component: About },
+        {
+            path: '/',
+            meta: {
+                title: "We provide real time US stock market informations."
+            },
+            component: Index
+        },
+        {
+            path: '/about',
+            meta: {
+                title: "About StockWatch.me"
+            },
+            component: About
+        },
     ]
+})
+
+router.beforeEach((to, from, next) => {
+    document.title = `StockWatch.me | ${to.meta.title}`
+    next()
 })
 
 Vue.mixin((() => {
