@@ -28,7 +28,6 @@
 						<b-dropdown-item href="#">EN</b-dropdown-item>
 					</DropdownMenu>
 				</b-navbar-nav>
-
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form class="mx-auto mx-lg-0 my-3 my-lg-0">
 						<SecondaryButton>
