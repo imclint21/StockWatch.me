@@ -1,24 +1,5 @@
-# stockwatch
+# StockWatch.se
 
-## Project setup
-```
-yarn install
-```
+StockWatch.me provides the latest stock market, financial and business news.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Screen Capture](https://user-images.githubusercontent.com/5221349/107845055-64bb5580-6de1-11eb-9cb3-e7cea68d1f5a.png)
