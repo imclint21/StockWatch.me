@@ -16,6 +16,7 @@
     "vue": "^2.6.12",
     "vue-feather": "^1.1.1",
     "vue-numeral-filter": "^2.0.0",
+    "vue-router": "^3.5.1",
     "vue-typer": "^1.2.0",
     "vuejs-datatable": "^2.0.0-alpha.7",
     "vuetrend": "^0.3.4"

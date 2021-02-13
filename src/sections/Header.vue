@@ -2,12 +2,11 @@
 	<b-navbar toggleable="lg" type="light" variant="white" class="border-bottom" sticky>
 		<b-container class="py-0 py-lg-4">
 			<b-navbar-brand>
-				<a href="/" class="inherit">
+				<router-link to="/" class="inherit">
 					<Logo />
-				</a>
+				</router-link>
 			</b-navbar-brand>
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
 			<b-collapse id="nav-collapse" class="mt-3 mt-lg-0" is-nav>
 				<b-navbar-nav class="mx-auto">
 					<DropdownMenu title="Stock Market">

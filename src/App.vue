@@ -2,35 +2,22 @@
 	<div id="app">
 		<Banner />
 		<Header />
-<!--		<br />-->
-		<b-container fluid>
-			<Welcome />
-			<Featured />
-			<StockTable />
-		</b-container>
+		<router-view></router-view>
 		<Footer />
-<!--    <img alt="Vue logo" src="./assets/logo.png">-->
-<!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
 	</div>
 </template>
 
 <script>
-import Header from './sections/Header'
-import Banner from "./sections/Banner";
-import StockTable from "@/sections/StockTable";
-import Featured from "@/sections/Featured";
-import Welcome from "@/sections/Welcome";
+import Banner from "@/sections/Banner";
+import Header from '@/sections/Header'
 import Footer from "@/sections/Footer";
 
 export default {
 	name: 'App',
 	components: {
-		Footer,
-		Featured,
-		StockTable,
 		Banner,
 		Header,
-		Welcome
+		Footer,
 	}
 }
 </script>
