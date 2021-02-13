@@ -1,5 +1,5 @@
 <template>
-	<footer :class="this.darkMode ? 'bg-dark' : 'border-top'">
+	<footer :class="this.darkMode ? 'bg-dark' : 'bg-white'">
 		<b-container class="d-none d-lg-block">
 			<b-row>
 				<b-col>
@@ -21,13 +21,13 @@
 					<p>
 						<a href="">
 							<feather type="mail" size="17" class="mr-1" style="vertical-align: sub;"></feather>
-							contact@seedstorm.io
+							contact@stockwatch.me
 						</a>
 					</p>
 					<p>
 						<a href="">
 							<feather type="twitter" size="17" class="mr-1" style="vertical-align: sub;"></feather>
-							seedstorm_io
+							stockwatch_me
 						</a>
 					</p>
 					<p>
@@ -58,11 +58,16 @@
 		<div class="copyright">
 			<b-container>
 				<b-row>
-					<b-col md="12" lg="9" class="text-lg-left text-center mb-3 mb-lg-0">
-						Copyright &copy; 2021 StockWatch.me - All Rights Reserved - Source on GitHub
+					<b-col md="12" lg="8" class="text-lg-left text-center mb-3 mb-lg-0">
+						Copyright &copy; {{ year }} StockWatch.me - All Rights Reserved -
+						<a href="https://github.com/clintnetwork/StockWatch.me" target="_blank">
+							<feather type="github" size="17" class="ml-1" style="vertical-align: sub;"></feather>
+							GitHub
+						</a>
 					</b-col>
-					<b-col class="d-none d-lg-block" lg="3">
-						License MIT • Hosted on Windows Azure
+					<b-col class="d-none d-lg-block text-right" lg="4">
+						<a href="https://github.com/clintnetwork/StockWatch.me/blob/master/LICENSE" target="_blank">License MIT</a>
+						&bull; Crafted with ❤️ by <a href="https://github.com/clintnetwork">Clint.Network</a>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -74,7 +79,12 @@
 import Logo from "@/components/Logo";
 export default {
 	name: "Footer",
-	components: {Logo}
+	components: {Logo},
+	data() {
+		return {
+			year: new Date().getFullYear()
+		}
+	}
 }
 </script>
 
