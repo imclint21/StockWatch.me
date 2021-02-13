@@ -1,6 +1,6 @@
 <template>
-	<b-button @click="switchTheme" variant="link" pill class="ml-2 pr-2" aria-label="Toggle themes">
-		<vue-feather type="moon" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
+	<b-button @click="switchTheme" variant="link">
+		<vue-feather type="moon" size="17" style="vertical-align: sub;"></vue-feather>
 	</b-button>
 </template>
 

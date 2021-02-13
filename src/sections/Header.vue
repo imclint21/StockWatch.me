@@ -1,12 +1,13 @@
 <template>
-	<b-navbar toggleable="lg" :type="this.darkMode ? 'dark' : 'light'" :variant="this.darkMode ? 'dark' : 'white'" class="border-bottom" sticky>
-		<b-container class="py-0 py-lg-4 px-0">
-			<b-navbar-brand>
+	<b-navbar toggleable="lg" :type="this.darkMode ? 'dark' : 'light'" :variant="this.darkMode ? 'dark' : 'white'" class="border-bottom px-0 px-lg-2" sticky>
+		<b-container class="py-0 py-lg-3 px-1 px-lg-0">
+			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+			<b-navbar-brand class="mr-auto">
 				<router-link to="/" class="inherit">
 					<Logo :dark="this.darkMode" />
 				</router-link>
 			</b-navbar-brand>
-			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+			<DarkModeSwitch class="d-block d-lg-none" />
 			<b-collapse id="nav-collapse" class="mt-3 mt-lg-0" is-nav>
 				<b-navbar-nav class="mx-auto">
 					<DropdownMenu title="Stock Market">
@@ -29,15 +30,17 @@
 				</b-navbar-nav>
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form class="mx-auto mx-lg-0 my-3 my-lg-0">
-						<AboutButton>
-							<vue-feather type="info" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
-							About Us
-						</AboutButton>
-						<PrimaryButton class="ml-3">
-							<vue-feather type="rss" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
-							Subscribe
-						</PrimaryButton>
-						<DarkModeSwitch />
+						<b-btn-group>
+							<AboutButton>
+								<vue-feather type="info" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
+								About Us
+							</AboutButton>
+							<PrimaryButton class="ml-3">
+								<vue-feather type="rss" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
+								Subscribe
+							</PrimaryButton>
+						</b-btn-group>
+						<DarkModeSwitch class="d-none d-lg-block ml-lg-4 px-0 pl-1" />
 					</b-nav-form>
 				</b-navbar-nav>
 			</b-collapse>
@@ -81,6 +84,12 @@ export default {
 
 .navbar-dark .navbar-nav .nav-link
 {
+	color: white !important;
+}
+
+.navbar .navbar-toggler
+{
+	border-width: 0 !important;
 	color: white !important;
 }
 
