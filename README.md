@@ -1,4 +1,4 @@
-# StockWatch.se
+# 🚀 StockWatch.se
 
 We provide real time US stock market informations.
 
