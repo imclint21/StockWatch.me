@@ -37,6 +37,7 @@ Vue.mixin((() => {
     if (localStorage.getItem("theme") !== null)
     {
         theme = localStorage.getItem("theme")
+        document.documentElement.setAttribute("data-theme", theme);
     }
 
     let store = Vue.observable({
@@ -50,7 +51,6 @@ Vue.mixin((() => {
                     return store.darkMode
                 },
                 set(val){
-                    console.log("lol");
                     store.darkMode = val
                 }
             }
@@ -65,18 +65,5 @@ new Vue({
             appTheme: 'tg'
         }
     },
-    // data: function () {
-    //   return {
-    //     globalTheme: String
-    //   }
-    // },
-    // created: function() {
-    //   this.tg = document.documentElement.getAttribute('data-theme')
-    // },
     router,
-    // methods: {
-    //   methodThatForcesUpdate() {
-    //     this.$forceUpdate();  // Notice we have to use a $ here
-    //   }
-    // }
 }).$mount('#app')

@@ -154,14 +154,19 @@ body
     width: 250px;
 }
 
-.navbar-dark .navbar-nav .nav-link
+html[data-theme="dark"] body
 {
-    color: white !important;
+    background-color: #27282d !important;
 }
 
 .card.bg-dark .table-dark
 {
     background-color: #2d2e33 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+    color: white !important;
 }
 
 .table-dark th, .table-dark td, .table-dark thead th

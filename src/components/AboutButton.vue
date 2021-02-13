@@ -23,5 +23,6 @@ export default {
 .btn-outline-primary:hover
 {
 	background-image: linear-gradient(45deg, #517FE5 0%, #3B6EDD 100%) !important;
+	color: white;
 }
 </style>

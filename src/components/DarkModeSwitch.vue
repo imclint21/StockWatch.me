@@ -17,6 +17,7 @@ export default {
 		{
 			this.darkMode = !this.darkMode;
 			localStorage.setItem("theme", this.darkMode ? "dark" : "light");
+			document.documentElement.setAttribute("data-theme", this.darkMode ? "dark" : "light");
 		}
 	}
 }
