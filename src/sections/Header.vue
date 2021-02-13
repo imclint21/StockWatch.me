@@ -32,8 +32,6 @@
 						<AboutButton>
 							<vue-feather type="info" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
 							About Us
-<!--							<vue-feather type="help-circle" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>-->
-<!--							Get Help-->
 						</AboutButton>
 						<PrimaryButton class="ml-3">
 							<vue-feather type="rss" size="17" class="mr-1" style="vertical-align: sub;"></vue-feather>
